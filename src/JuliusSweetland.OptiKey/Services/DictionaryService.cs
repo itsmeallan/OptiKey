@@ -261,7 +261,7 @@ namespace JuliusSweetland.OptiKey.Services
                 && (loadedFromDictionaryFile || !ExistsInDictionary(entry)))
             {
                 //Add to in-memory (hashed) dictionary (and then save to custom dictionary file if new entry entered by user)
-                var hash = entry.CreateDictionaryEntryHash(log: !loadedFromDictionaryFile);
+                var hash = entry.NormaliseAndRemoveRepeatingCharactersAndHandlePhrases(log: !loadedFromDictionaryFile);
                 if (!string.IsNullOrWhiteSpace(hash))
                 {
                     var newEntryWithUsageCount = new DictionaryEntry(entry, usageCount);
@@ -302,7 +302,7 @@ namespace JuliusSweetland.OptiKey.Services
                 && !string.IsNullOrWhiteSpace(entry)
                 && ExistsInDictionary(entry))
             {
-                var hash = entry.CreateDictionaryEntryHash(log: false);
+                var hash = entry.NormaliseAndRemoveRepeatingCharactersAndHandlePhrases(log: false);
                 if (!string.IsNullOrWhiteSpace(hash)
                     && entries.ContainsKey(hash))
                 {
@@ -380,7 +380,7 @@ namespace JuliusSweetland.OptiKey.Services
             if (!string.IsNullOrWhiteSpace(text)
                 && entries != null)
             {
-                var hash = text.CreateDictionaryEntryHash(log: false);
+                var hash = text.NormaliseAndRemoveRepeatingCharactersAndHandlePhrases(log: false);
 
                 if (hash != null
                     && entries.ContainsKey(hash))
@@ -466,10 +466,18 @@ namespace JuliusSweetland.OptiKey.Services
                     : new List<Tuple<char, char, int>>();
                 
                 //Create strings (Item1==cleansed/hashed, Item2==uncleansed) of reliable + characters with counts above the mean
-                var reliableFirstCharCleansed = reliableFirstLetter != null ? reliableFirstLetter.RemoveDiacritics().ToUpper().First() : (char?)null;
-                var reliableFirstCharUncleansed = reliableFirstLetter != null ? reliableFirstLetter.First() : (char?)null;
-                var reliableLastCharCleansed = reliableLastLetter != null ? reliableLastLetter.RemoveDiacritics().ToUpper().First() : (char?)null;
-                var reliableLastCharUncleansed = reliableLastLetter != null ? reliableLastLetter.First() : (char?)null;
+                var reliableFirstCharCleansed = reliableFirstLetter != null 
+                    ? reliableFirstLetter.Normalise().First() 
+                    : (char?)null;
+                var reliableFirstCharUncleansed = reliableFirstLetter != null 
+                    ? reliableFirstLetter.First() 
+                    : (char?)null;
+                var reliableLastCharCleansed = reliableLastLetter != null 
+                    ? reliableLastLetter.Normalise().First() 
+                    : (char?)null;
+                var reliableLastCharUncleansed = reliableLastLetter != null 
+                    ? reliableLastLetter.First() 
+                    : (char?)null;
 
                 //Calculate threshold as mean of all letters without reliable first/last (as those selections can skew the average)
                 var charsWithCountWithoutReliableFirstOrLast = charsWithCount.Where((cwc, index) =>

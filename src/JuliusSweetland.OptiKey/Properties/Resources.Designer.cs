@@ -334,6 +334,15 @@ namespace JuliusSweetland.OptiKey.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Calibration failed!.
+        /// </summary>
+        public static string CALIBRATION_FAIL_NO_MESSAGE {
+            get {
+                return ResourceManager.GetString("CALIBRATION_FAIL_NO_MESSAGE", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Calibration cannot be completed without manual intervention, e.g. having to use a mouse. You may be stuck in the calibration process if you cannot manually interact with your computer.
         ///Are you sure you would like to re-calibrate?.
         /// </summary>
@@ -353,11 +362,20 @@ namespace JuliusSweetland.OptiKey.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Calibration success! Accuracy (Avg Error Degree = {0}).
+        ///   Looks up a localized string similar to Calibration success!.
         /// </summary>
         public static string CALIBRATION_SUCCESS {
             get {
                 return ResourceManager.GetString("CALIBRATION_SUCCESS", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Calibration success! Accuracy (Avg Error Degree = {0}).
+        /// </summary>
+        public static string CALIBRATION_SUCCESS_WITH_ACCURACY {
+            get {
+                return ResourceManager.GetString("CALIBRATION_SUCCESS_WITH_ACCURACY", resourceCulture);
             }
         }
         
@@ -624,6 +642,27 @@ namespace JuliusSweetland.OptiKey.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Croatian (Croatia) / Hrvatski (Hrvatska).
+        /// </summary>
+        public static string CROATIAN_CROATIA {
+            get {
+                return ResourceManager.GetString("CROATIAN_CROATIA", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Croatian
+        ///(Croatia) /
+        ///Hrvatski
+        ///(Hrvatska).
+        /// </summary>
+        public static string CROATIAN_CROATIA_SPLIT_WITH_NEWLINE {
+            get {
+                return ResourceManager.GetString("CROATIAN_CROATIA_SPLIT_WITH_NEWLINE", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to CTRL.
         /// </summary>
         public static string CTRL {
@@ -692,6 +731,27 @@ namespace JuliusSweetland.OptiKey.Properties {
         public static string CURSOR_WIDTH_LABEL {
             get {
                 return ResourceManager.GetString("CURSOR_WIDTH_LABEL", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Danish (Denmark) / Dansk (Danmark).
+        /// </summary>
+        public static string DANISH_DENMARK {
+            get {
+                return ResourceManager.GetString("DANISH_DENMARK", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Danish
+        ///(Denmark) /
+        ///Dansk
+        ///(Danmark).
+        /// </summary>
+        public static string DANISH_DENMARK_SPLIT_WITH_NEWLINE {
+            get {
+                return ResourceManager.GetString("DANISH_DENMARK_SPLIT_WITH_NEWLINE", resourceCulture);
             }
         }
         
@@ -896,8 +956,10 @@ namespace JuliusSweetland.OptiKey.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Dutch (Belgium)
-        ///Nederlands (België).
+        ///   Looks up a localized string similar to Dutch
+        ///(Belgium) /
+        ///Nederlands
+        ///(België).
         /// </summary>
         public static string DUTCH_BELGIUM_SPLIT_WITH_NEWLINE {
             get {
@@ -915,8 +977,10 @@ namespace JuliusSweetland.OptiKey.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Dutch (Netherlands)
-        ///Nederlands (Nederland).
+        ///   Looks up a localized string similar to Dutch
+        ///(Netherlands) /
+        ///Nederlands
+        ///(Nederland).
         /// </summary>
         public static string DUTCH_NETHERLANDS_SPLIT_WITH_NEWLINE {
             get {
@@ -943,6 +1007,18 @@ namespace JuliusSweetland.OptiKey.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to 
+        ///English
+        ///(Canada)
+        ///.
+        /// </summary>
+        public static string ENGLISH_CANADA_SPLIT_WITH_NEWLINE {
+            get {
+                return ResourceManager.GetString("ENGLISH_CANADA_SPLIT_WITH_NEWLINE", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to English (UK).
         /// </summary>
         public static string ENGLISH_UK {
@@ -952,11 +1028,35 @@ namespace JuliusSweetland.OptiKey.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to 
+        ///English
+        ///(UK)
+        ///.
+        /// </summary>
+        public static string ENGLISH_UK_SPLIT_WITH_NEWLINE {
+            get {
+                return ResourceManager.GetString("ENGLISH_UK_SPLIT_WITH_NEWLINE", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to English (US).
         /// </summary>
         public static string ENGLISH_US {
             get {
                 return ResourceManager.GetString("ENGLISH_US", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 
+        ///English
+        ///(US)
+        ///.
+        /// </summary>
+        public static string ENGLISH_US_SPLIT_WITH_NEWLINE {
+            get {
+                return ResourceManager.GetString("ENGLISH_US_SPLIT_WITH_NEWLINE", resourceCulture);
             }
         }
         
@@ -1366,8 +1466,10 @@ namespace JuliusSweetland.OptiKey.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to French (France)
-        ///Française (France).
+        ///   Looks up a localized string similar to French
+        ///(France) /
+        ///Française
+        ///(France).
         /// </summary>
         public static string FRENCH_FRANCE_SPLIT_WITH_NEWLINE {
             get {
@@ -1403,8 +1505,10 @@ namespace JuliusSweetland.OptiKey.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to German (Germany)
-        ///Deutsch (Deutschland).
+        ///   Looks up a localized string similar to German
+        ///(Germany) /
+        ///Deutsch
+        ///(Deutschland).
         /// </summary>
         public static string GERMAN_GERMANY_SPLIT_WITH_NEWLINE {
             get {
@@ -1413,7 +1517,7 @@ namespace JuliusSweetland.OptiKey.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Greek (Greece) / Ελληνικά (Greece).
+        ///   Looks up a localized string similar to Greek (Greece) / Ελληνικά (Ελλάδα).
         /// </summary>
         public static string GREEK_GREECE {
             get {
@@ -1422,8 +1526,10 @@ namespace JuliusSweetland.OptiKey.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Greek (Greece)
-        ///Ελληνικά (Greece).
+        ///   Looks up a localized string similar to Greek
+        ///(Greece) /
+        ///Ελληνικά
+        ///(Ελλάδα).
         /// </summary>
         public static string GREEK_GREECE_SPLIT_WITH_NEWLINE {
             get {
@@ -1537,6 +1643,27 @@ namespace JuliusSweetland.OptiKey.Properties {
         public static string INVALID_KEYBOARD_AND_LANGUAGE_ERROR {
             get {
                 return ResourceManager.GetString("INVALID_KEYBOARD_AND_LANGUAGE_ERROR", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Italian (Italy) / Italiano (Italia).
+        /// </summary>
+        public static string ITALIAN_ITALY {
+            get {
+                return ResourceManager.GetString("ITALIAN_ITALY", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Italian
+        ///(Italy) /
+        ///Italiano
+        ///(Italia).
+        /// </summary>
+        public static string ITALIAN_ITALY_SPLIT_WITH_NEWLINE {
+            get {
+                return ResourceManager.GetString("ITALIAN_ITALY_SPLIT_WITH_NEWLINE", resourceCulture);
             }
         }
         
@@ -2745,6 +2872,15 @@ namespace JuliusSweetland.OptiKey.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Unable to connect to myGaze! Please check that the server is running and the device is connected and try again..
+        /// </summary>
+        public static string MY_GAZE_CONNECT_ERROR {
+            get {
+                return ResourceManager.GetString("MY_GAZE_CONNECT_ERROR", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to 
         ///(The new dictionary entry will contain capital letters).
         /// </summary>
@@ -3379,8 +3515,10 @@ namespace JuliusSweetland.OptiKey.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Russian (Russia)
-        ///Русский (Россия).
+        ///   Looks up a localized string similar to Russian
+        ///(Russia) /
+        ///Русский
+        ///(Россия).
         /// </summary>
         public static string RUSSIAN_RUSSIA_SPLIT_WITH_NEWLINE {
             get {
@@ -3790,6 +3928,27 @@ namespace JuliusSweetland.OptiKey.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Slovenian (Slovenia) / Slovensko (Slovenija).
+        /// </summary>
+        public static string SLOVENIAN_SLOVENIA {
+            get {
+                return ResourceManager.GetString("SLOVENIAN_SLOVENIA", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Slovenian
+        ///(Slovenia) /
+        ///Slovensko
+        ///(Slovenija).
+        /// </summary>
+        public static string SLOVENIAN_SLOVENIA_SPLIT_WITH_NEWLINE {
+            get {
+                return ResourceManager.GetString("SLOVENIAN_SLOVENIA_SPLIT_WITH_NEWLINE", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Sound effects.
         /// </summary>
         public static string SOUND_EFFECTS {
@@ -3822,6 +3981,27 @@ namespace JuliusSweetland.OptiKey.Properties {
         public static string SPACE {
             get {
                 return ResourceManager.GetString("SPACE", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Spanish (Spain) / Español (España).
+        /// </summary>
+        public static string SPANISH_SPAIN {
+            get {
+                return ResourceManager.GetString("SPANISH_SPAIN", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Spanish
+        ///(Spain) /
+        ///Español
+        ///(España).
+        /// </summary>
+        public static string SPANISH_SPAIN_SPLIT_WITH_NEWLINE {
+            get {
+                return ResourceManager.GetString("SPANISH_SPAIN_SPLIT_WITH_NEWLINE", resourceCulture);
             }
         }
         
@@ -3939,6 +4119,15 @@ namespace JuliusSweetland.OptiKey.Properties {
         public static string SUGGESTION_KEYS_KEY_GROUP {
             get {
                 return ResourceManager.GetString("SUGGESTION_KEYS_KEY_GROUP", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Suppress modifier keys for all mouse actions:.
+        /// </summary>
+        public static string SUPPRESS_MODIFIERS_FOR_ALL_MOUSE_ACTIONS {
+            get {
+                return ResourceManager.GetString("SUPPRESS_MODIFIERS_FOR_ALL_MOUSE_ACTIONS", resourceCulture);
             }
         }
         
@@ -4150,6 +4339,27 @@ namespace JuliusSweetland.OptiKey.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Turkish (Turkey) / Türkçe (Türkiye).
+        /// </summary>
+        public static string TURKISH_TURKEY {
+            get {
+                return ResourceManager.GetString("TURKISH_TURKEY", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Turkish
+        ///(Turkey) /
+        ///Türkçe
+        ///(Türkiye).
+        /// </summary>
+        public static string TURKISH_TURKEY_SPLIT_WITH_NEWLINE {
+            get {
+                return ResourceManager.GetString("TURKISH_TURKEY_SPLIT_WITH_NEWLINE", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to User interface language: {0}.
         /// </summary>
         public static string UI_LANGUAGE_DESCRIPTION {
@@ -4274,6 +4484,15 @@ namespace JuliusSweetland.OptiKey.Properties {
         public static string VERTICAL_FILL_LABEL {
             get {
                 return ResourceManager.GetString("VERTICAL_FILL_LABEL", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Visual Interaction myGaze.
+        /// </summary>
+        public static string VI_MYGAZE {
+            get {
+                return ResourceManager.GetString("VI_MYGAZE", resourceCulture);
             }
         }
         
